@@ -130,6 +130,7 @@ class GameScene: SKScene {
         //This one check the user score is greater than the opponent score
         if (board.score > self.opponentScore) && (viewController.opponentScore != nil) {
             self.endGame()
+            //Wow
         }
         
         //This one checks when the user has ran out of moves and will end the game
