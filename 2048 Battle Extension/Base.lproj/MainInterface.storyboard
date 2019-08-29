@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ClearSans-Bold.ttf">
+            <string>ClearSans-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Messages View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="_048_Battle_Extension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qkL-Od-lgU"/>
+                        <viewControllerLayoutGuide type="bottom" id="n38-gi-rB5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="38" y="36"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="UTx-ii-C0y">
+            <objects>
+                <viewController storyboardIdentifier="GameViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EqR-P7-q6N" customClass="GameViewController" customModule="_048_Battle_Extension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yFU-8q-3iD"/>
+                        <viewControllerLayoutGuide type="bottom" id="3j1-cH-inK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T7z-1I-Mo9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvs-og-C9H" customClass="SKView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.97254901959999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rvs-og-C9H" secondAttribute="height" multiplier="375:667" id="Q0d-B1-ant"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ggw-32-ZvE" userLabel="Waiting for Oponnent">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting for Opponent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zo7-kQ-avD">
+                                        <rect key="frame" x="49.5" y="314.5" width="276" height="39.5"/>
+                                        <fontDescription key="fontDescription" name="ClearSans-Bold" family="Clear Sans" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="zo7-kQ-avD" firstAttribute="centerX" secondItem="Ggw-32-ZvE" secondAttribute="centerX" id="Rm8-xx-IBJ"/>
+                                    <constraint firstItem="zo7-kQ-avD" firstAttribute="centerX" secondItem="Ggw-32-ZvE" secondAttribute="centerX" id="cVr-Y8-f2p"/>
+                                    <constraint firstItem="zo7-kQ-avD" firstAttribute="centerY" secondItem="Ggw-32-ZvE" secondAttribute="centerY" id="xhI-iL-45E"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.97254901959999995" blue="0.93725490199999995" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="rvs-og-C9H" firstAttribute="centerY" secondItem="T7z-1I-Mo9" secondAttribute="centerY" id="HE6-nR-8U4"/>
+                            <constraint firstItem="rvs-og-C9H" firstAttribute="centerX" secondItem="T7z-1I-Mo9" secondAttribute="centerX" id="Oqq-ZK-sTJ"/>
+                            <constraint firstItem="rvs-og-C9H" firstAttribute="top" secondItem="T7z-1I-Mo9" secondAttribute="top" id="Pes-po-Ya9"/>
+                            <constraint firstItem="Ggw-32-ZvE" firstAttribute="leading" secondItem="T7z-1I-Mo9" secondAttribute="leading" id="eeD-dT-dHy"/>
+                            <constraint firstAttribute="trailing" secondItem="Ggw-32-ZvE" secondAttribute="trailing" id="nuU-Pt-4ej"/>
+                            <constraint firstItem="3j1-cH-inK" firstAttribute="top" secondItem="Ggw-32-ZvE" secondAttribute="bottom" id="pjQ-ZY-gNs"/>
+                            <constraint firstItem="Ggw-32-ZvE" firstAttribute="top" secondItem="T7z-1I-Mo9" secondAttribute="top" id="qgw-hf-v0o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="spriteView" destination="rvs-og-C9H" id="Y1S-d6-nub"/>
+                        <outlet property="waitingLabel" destination="zo7-kQ-avD" id="XLs-gh-eSg"/>
+                        <outlet property="waitingView" destination="Ggw-32-ZvE" id="GWH-No-x8r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yc1-fb-IJX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1308" y="36"/>
+        </scene>
+        <!--Game Over View Controller-->
+        <scene sceneID="dHw-ey-mrd">
+            <objects>
+                <viewController storyboardIdentifier="GameOverViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="adN-8w-Der" customClass="GameOverViewController" customModule="_048_Battle_Extension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SsH-ot-XNf"/>
+                        <viewControllerLayoutGuide type="bottom" id="I47-lf-wac"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="92z-SJ-FGT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Result" translatesAutoresizingMaskIntoConstraints="NO" id="Dqk-ve-TPy">
+                                <rect key="frame" x="71" y="231.5" width="233" height="71"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Won!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMV-SH-Ddd">
+                                <rect key="frame" x="134.5" y="262.5" width="106.5" height="35.5"/>
+                                <fontDescription key="fontDescription" name="ClearSans-Bold" family="Clear Sans" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHI-XO-G1X" userLabel="Rematch">
+                                <rect key="frame" x="71" y="327.5" width="233" height="72"/>
+                                <state key="normal" image="Rematch"/>
+                                <connections>
+                                    <action selector="rematch:" destination="adN-8w-Der" eventType="touchUpInside" id="k7D-Qb-8Jb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcT-TR-nlW" userLabel="Rate">
+                                <rect key="frame" x="71" y="424.5" width="233" height="71"/>
+                                <state key="normal" image="Rate"/>
+                                <connections>
+                                    <action selector="rate:" destination="adN-8w-Der" eventType="touchUpInside" id="NKw-Cp-x5N"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KR9-Lc-X46">
+                                <rect key="frame" x="27" y="122" width="321" height="84.5"/>
+                                <fontDescription key="fontDescription" name="ClearSans-Bold" family="Clear Sans" pointSize="60"/>
+                                <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.97254901959999995" blue="0.93725490199999995" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="KR9-Lc-X46" firstAttribute="centerX" secondItem="92z-SJ-FGT" secondAttribute="centerX" id="1Th-qV-q3l"/>
+                            <constraint firstItem="nMV-SH-Ddd" firstAttribute="centerX" secondItem="92z-SJ-FGT" secondAttribute="centerX" id="AWw-zK-Lpp"/>
+                            <constraint firstItem="pcT-TR-nlW" firstAttribute="top" secondItem="bHI-XO-G1X" secondAttribute="bottom" constant="25" id="Daa-0S-yOK"/>
+                            <constraint firstItem="bHI-XO-G1X" firstAttribute="top" secondItem="Dqk-ve-TPy" secondAttribute="bottom" constant="25" id="KvO-om-QLs"/>
+                            <constraint firstItem="Dqk-ve-TPy" firstAttribute="top" secondItem="KR9-Lc-X46" secondAttribute="bottom" constant="25" id="U5w-he-eXC"/>
+                            <constraint firstItem="pcT-TR-nlW" firstAttribute="centerX" secondItem="92z-SJ-FGT" secondAttribute="centerX" id="dwB-7M-EAg"/>
+                            <constraint firstItem="KR9-Lc-X46" firstAttribute="leading" secondItem="92z-SJ-FGT" secondAttribute="leadingMargin" constant="11" id="klN-H5-TTh"/>
+                            <constraint firstItem="bHI-XO-G1X" firstAttribute="centerX" secondItem="92z-SJ-FGT" secondAttribute="centerX" id="oOh-ot-Yg2"/>
+                            <constraint firstItem="Dqk-ve-TPy" firstAttribute="centerX" secondItem="92z-SJ-FGT" secondAttribute="centerX" id="rq6-ff-QlS"/>
+                            <constraint firstItem="bHI-XO-G1X" firstAttribute="top" secondItem="nMV-SH-Ddd" secondAttribute="bottom" constant="29.5" id="sEk-54-SxA"/>
+                            <constraint firstItem="bHI-XO-G1X" firstAttribute="centerY" secondItem="92z-SJ-FGT" secondAttribute="centerY" constant="30" id="tSx-R1-xfT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="result" destination="nMV-SH-Ddd" id="8wh-8u-jeb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vd4-DG-YJE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1933.5999999999999" y="35.532233883058474"/>
+        </scene>
+        <!--Start Game View Controller-->
+        <scene sceneID="Zkv-gf-tnR">
+            <objects>
+                <viewController storyboardIdentifier="StartGameViewController" id="xx4-e9-ZQY" customClass="StartGameViewController" customModule="_048_Battle_Extension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bsv-qF-Let"/>
+                        <viewControllerLayoutGuide type="bottom" id="nmc-VJ-cvh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NHy-6y-j5S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWR-wT-7qi" userLabel="Lets Battle">
+                                <rect key="frame" x="87.5" y="288" width="200" height="61"/>
+                                <state key="normal" backgroundImage="LetsBattle"/>
+                                <connections>
+                                    <action selector="startGame:" destination="xx4-e9-ZQY" eventType="touchUpInside" id="8vD-Tc-5cy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.97254901959999995" blue="0.93725490199999995" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="BWR-wT-7qi" firstAttribute="centerX" secondItem="NHy-6y-j5S" secondAttribute="centerX" id="QPr-r9-wKf"/>
+                            <constraint firstItem="BWR-wT-7qi" firstAttribute="centerY" secondItem="NHy-6y-j5S" secondAttribute="centerY" constant="-15" id="csG-aj-u5I"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LNv-yp-L9U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="671" y="36"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LetsBattle" width="200" height="61"/>
+        <image name="Rate" width="233" height="71"/>
+        <image name="Rematch" width="233" height="72"/>
+        <image name="Result" width="233" height="71"/>
+    </resources>
+</document>

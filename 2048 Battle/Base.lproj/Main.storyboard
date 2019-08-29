@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BMF-p7-Ulb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="hYo-xC-RFQ">
+            <objects>
+                <pageViewController storyboardIdentifier="pageVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="BMF-p7-Ulb" customClass="PageViewController" customModule="_048_Battle" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ds5-jP-bVb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-703" y="36"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="0" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="FirstViewController" customModule="_048_Battle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="Screen1" translatesAutoresizingMaskIntoConstraints="NO" id="Hr9-hE-Ra8">
+                                <rect key="frame" x="35" y="105" width="305" height="457"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.97254901959999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hr9-hE-Ra8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="19" id="5HR-zE-4it"/>
+                            <constraint firstItem="Hr9-hE-Ra8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Evc-vO-ug0"/>
+                            <constraint firstItem="Hr9-hE-Ra8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="85" id="P1y-wP-vrR"/>
+                            <constraint firstItem="Hr9-hE-Ra8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="chF-Rs-ayq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="screenImage" destination="Hr9-hE-Ra8" id="53b-oS-oUO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29" y="36"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kGy-f3-rbP">
+            <objects>
+                <viewController storyboardIdentifier="1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eu0-s7-q9A" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gTt-kz-zZ7"/>
+                        <viewControllerLayoutGuide type="bottom" id="eQb-PT-cXv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yqS-Pb-Niv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="SecondPage" translatesAutoresizingMaskIntoConstraints="NO" id="9SE-Tl-rzW">
+                                <rect key="frame" x="29" y="95" width="317" height="477"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.97254901959999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9SE-Tl-rzW" firstAttribute="centerX" secondItem="yqS-Pb-Niv" secondAttribute="centerX" id="5Fm-Cl-10b"/>
+                            <constraint firstItem="9SE-Tl-rzW" firstAttribute="centerY" secondItem="yqS-Pb-Niv" secondAttribute="centerY" id="FMt-yT-vzZ"/>
+                            <constraint firstItem="9SE-Tl-rzW" firstAttribute="leading" secondItem="yqS-Pb-Niv" secondAttribute="leadingMargin" constant="13" id="XS3-Tq-RWu"/>
+                            <constraint firstItem="9SE-Tl-rzW" firstAttribute="top" secondItem="gTt-kz-zZ7" secondAttribute="bottom" constant="74.5" id="n8A-Zy-cfm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lV5-bQ-UMW" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="786" y="36"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="cSv-QW-RMK">
+            <objects>
+                <viewController storyboardIdentifier="2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GjL-A9-KZh" customClass="ThirdViewController" customModule="_048_Battle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nlK-cN-bMU"/>
+                        <viewControllerLayoutGuide type="bottom" id="bOb-xg-Www"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Tt-46-X6X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUz-tm-hhf" userLabel="Lets Battle">
+                                <rect key="frame" x="87.5" y="303" width="200" height="61"/>
+                                <state key="normal" backgroundImage="LetsBattle"/>
+                                <connections>
+                                    <action selector="startGame:" destination="GjL-A9-KZh" eventType="touchUpInside" id="7pR-lX-0XH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.97254901959999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GUz-tm-hhf" firstAttribute="centerY" secondItem="1Tt-46-X6X" secondAttribute="centerY" id="Yma-rd-iX9"/>
+                            <constraint firstItem="GUz-tm-hhf" firstAttribute="centerX" secondItem="1Tt-46-X6X" secondAttribute="centerX" id="b6r-Gt-GK5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="letsBattleButton" destination="GUz-tm-hhf" id="5eJ-q8-mTE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ME-su-RVL" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1583" y="36"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LetsBattle" width="200" height="61"/>
+        <image name="Screen1" width="304" height="457"/>
+        <image name="SecondPage" width="318" height="478"/>
+    </resources>
+</document>
